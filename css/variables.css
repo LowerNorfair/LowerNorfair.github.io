@@ -1,0 +1,25 @@
+:root{
+	--dark-blue: #1b1d21;
+	--med-blue: #252a32;
+	
+	--hlistbg: #c0c0c0;
+	--hlistbg-hover: yellow;
+	--header-bg: #1c1c1c;
+	
+	--footer-bg: yellow;
+	--footer-link-hover: black;
+	
+	--accent-colour: black;
+	
+	--light-link: #fefefe;
+	--light-link-hover: #00b7ff;
+	
+	--light-text: #c0c0c0;
+	--highlight-text: #00b7ff;
+
+	--padding-top-bottom: 1em 0 1em 0;
+	--padding-small-uniform: 1em;
+	
+	--large-font: 5em;
+	--main-font: "IBM Plex Mono", monospace;
+}
