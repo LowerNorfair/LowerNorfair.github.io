@@ -115,7 +115,8 @@ a:hover{
 */
 
 .game-grid{
-	
+	display: flex;
+	gap: 5em;
 }
 
 .game-grid-block img{
