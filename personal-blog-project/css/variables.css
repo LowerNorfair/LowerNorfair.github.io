@@ -1,0 +1,16 @@
+:root{
+    --font-heading: "Roboto Slab", serif;
+    --font-subtitle: 'EmpiricaHeadline','Times New Roman',serif;
+    --font-para: "Montserrat", sans-serif;
+
+    --bg-colour01:#fff9ed;
+    --bg-colour02:#000000;
+    --bg-colour03:#ffffff;
+
+    --font-size01: clamp(max(16px,1rem), 0.4vw + 1rem, 2rem);
+
+    --colour01: #bb9240;
+    --colour02:rgb(225, 187, 255);;
+    --colour03:rgb(5, 20, 44);
+    --colour-highlight: rgb(183, 96, 255);
+}

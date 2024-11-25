@@ -1,0 +1,29 @@
+.document-content{
+    padding: 2em;
+}
+
+
+.document-colours{
+    display:inline-flex;
+    gap:1em;
+    flex-wrap: wrap;
+}
+
+.colours-box{
+    border-radius: 150px;
+    height: 50px;
+    width: 50px;
+    padding: 50px;
+}
+
+.colours-box:nth-child(1){
+    background-color:var(--colour01);
+}
+
+.colours-box:nth-child(2){
+    background-color:var(--colour02);
+}
+
+.colours-box:nth-child(3){
+    background-color:var(--colour-highlight);
+}
