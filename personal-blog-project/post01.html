@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <link rel="stylesheet" href="./css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Art in the public domain</title>
+        <title>The Bridge at Argenteuil - Art in the public domain</title>
     </head>
 <body>
     
     <div class="container">
         <header class="header">
             <h1>Art in the public domain</h1>
+            <input id="menu-checkbox" type="checkbox" name="menu" />
+            <label id="menu-label" for="menu-checkbox">☰</label>
             <ul class="header-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Archive</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Subscribe</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
                 <li><a href="#">Search</a></li>
             </ul>
         </header>
 
         <article class="post">
             <section class="post-header">
-                <div class="post-header-img">
+                <figure class="post-header-img">
                     <img src="static/images/the_bridge_at_argenteuil_1983.1.24.jpg" alt="Claude Monet, The Bridge at Argenteuil, 1874">
-                    <p><em>Claude Monet, The Bridge at Argenteuil, 1874</em></p>
-                </div>
+                    <figcaption>Claude Monet, The Bridge at Argenteuil, 1874</figcaption>
+                </figure>
                 <div class="post-header-meta">
                     <h2>The Bridge at Argenteuil</h2>
+                    <p><em>The Bridge at Argenteuil</em> is a painting by Claude Monet, depicting the Seine river and its pleasure boats.</p>
                     <p>By Samus Aran</p>
                     <p>Oct. 31, 2024, 2:50pm</p>
                 </div>
@@ -35,22 +38,32 @@
 
             <section class="article-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="quote">
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                        <p>[E]very day I discover even more beautiful things. It is intoxicating me, and I want to paint it all - my head is bursting....</p>
+                    </blockquote>
+                    <p>Claude Monet <cite>Monet's landschappen, Vivian Rusell</cite></p>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <img src="static/images/forest_interior_with_a_painter,_civita_castellana_1994.52.3.jpg" alt=" Forest Interior with a Painter, Civita Castellana, 1825/1830">
-                <p><em>André Giroux, Forest Interior with a Painter, Civita Castellana, 1825/1830</em></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <figure class="article-img">
+                    <img src="static/images/forest_interior_with_a_painter,_civita_castellana_1994.52.3.jpg" alt=" Forest Interior with a Painter, Civita Castellana, 1825/1830">
+                    <figcaption>André Giroux, Forest Interior with a Painter, Civita Castellana, 1825/1830</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </section>
 
             <section class="author-bio">
-                <img src="" alt="Author name">
+                <img src="static/images/forest_interior_with_a_painter,_civita_castellana_1994.52.3.jpg" class="author-icon" alt="Author name">
                 <p>Author is a blah blah..</p>
             </section>
 
             <section class="article-socials">
                 <ul>
-                    <li>Twitter</li>
-                    <li>Facebook</li>
-                    <li>LinkedIn</li>
+                    <li class="socials-twitter"><a href="#">Twitter / X</a></li>
+                    <li class="socials-facebook"><a href="#">Facebook</a></li>
+                    <li class="socials-linkedin"><a href="#">LinkedIn</a></li>
                 </ul>
             </section>
         </article>
@@ -64,6 +77,7 @@
             <div class="footer-about">
                 <h2>Art in the public domain</h2>
                 <p>This site contains paintings which are in the public domain. All images sourced from the <a href="https://www.nga.gov/collection/paintings.html">National Gallery of Art</a>.</p>
+                <p>Social media icons from <a href="https://icons8.com" aria-label="icons8">icons8.com</a>.</p>
             </div>
         </footer>
     </div>

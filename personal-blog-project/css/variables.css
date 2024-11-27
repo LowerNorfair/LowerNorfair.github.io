@@ -2,15 +2,20 @@
     --font-heading: "Roboto Slab", serif;
     --font-subtitle: 'EmpiricaHeadline','Times New Roman',serif;
     --font-para: "Montserrat", sans-serif;
+    --font-other:  "Grandstander", cursive;
 
     --bg-colour01:#fff9ed;
     --bg-colour02:#000000;
     --bg-colour03:#ffffff;
 
-    --font-size01: clamp(max(16px,1rem), 0.4vw + 1rem, 2rem);
+    --font-size01: clamp(min(14px,1rem), 0.4vw + 1rem, max(16px, 2rem));
 
-    --colour01: #bb9240;
-    --colour02:rgb(225, 187, 255);;
+    --colour01: #7c5811;
+    --colour02:rgb(225, 187, 255);
     --colour03:rgb(5, 20, 44);
+    --colour04: rgb(120, 67, 160);
+    --colour05: rgb(71, 52, 165);
+    --colour-downlight: rgb(199, 81, 81);
     --colour-highlight: rgb(183, 96, 255);
+    --colour-pale: rgb(116, 116, 116);
 }
