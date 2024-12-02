@@ -2,9 +2,9 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Art in the public domain</title>
 </head>
@@ -13,8 +13,8 @@
     <div class="container">
         <header class="header">
             <h1>Art in the public domain</h1>
-            <input id="menu-checkbox" type="checkbox" name="menu" />
-            <label id="menu-label" for="menu-checkbox">☰</label>
+            <input class="menu-checkbox" id="menu-checkbox" type="checkbox" name="menu">
+            <label class="menu-label" for="menu-checkbox">☰</label>
             <ul class="header-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Archive</a></li>
@@ -24,18 +24,36 @@
             </ul>
         </header>
 
+        <div class="feed-extra">
+            <div class="extra-img">
+                <a href="post01.html">
+                    <img src="static/images/the_bridge_at_argenteuil_1983.1.24.jpg" alt="Claude Monet, The Bridge at Argenteuil, 1874 ">
+                </a>
+            </div>
+            <h2 class="extra-h2">
+                <a href="post01.html">The Bridge at Argenteuil</a>
+            </h2>
+            <p class="extra-p">
+                <em>The Bridge at Argenteuil</em> is a painting by Claude Monet, depicting pleasure boats on the river Seine.
+            </p>
+            <div class="preview-meta">
+                <p class="extra-p"><a href="#">Water</a></p>
+                <p class="extra-p">October 31</p>
+            </div>
+        </div>
+
         <div class="feed">
             <div class="post-preview">
                 <div class="preview-img">
-                    <a href="post01.html">
-                        <img src="static/images/the_bridge_at_argenteuil_1983.1.24.jpg" alt="Claude Monet, The Bridge at Argenteuil, 1874 ">
+                    <a href="static/articles/post02.html">
+                        <img src="static/images/fantastic_mountainous_landscape_with_a_starry_sky_2009.70.76.jpg" alt="Robert Caney, Fantastic Mountainous Landscape with a Starry Sky ">
                     </a>
                 </div>
                 <h2>
-                    <a href="post01.html">The Bridge at Argenteuil</a>
+                    <a href="static/articles/post02.html">Fantastic Mountainous Landscape with a Starry Sky</a>
                 </h2>
                 <div class="preview-subtitle">
-                    <p><em>The Bridge at Argenteuil</em> is a painting by Claude Monet, depicting the Seine river and its pleasure boats.</p>
+                    <p><em>Fantastic Mountainous Landscape with a Starry Sky</em> is a watercolour and gouache painting by Robert Caney.</p>
                 </div>
                 <div class="preview-meta">
                     <p><a href="#">Water</a></p>
@@ -46,13 +64,15 @@
             
             <div class="post-preview">
                 <div class="preview-img">
-                    <img src="static/images/the_banks_of_the_oise_1963.10.214.jpg" alt="Alfred Sisley, The Banks of the Oise, 1877/1878 ">
+                    <a href="#">
+                        <img src="static/images/the_banks_of_the_oise_1963.10.214.jpg" alt="Alfred Sisley, The Banks of the Oise, 1877/1878 ">
+                    </a>
                 </div>
                 <h2>
-                    <a href="post02.html">The Banks of the Oise</a>
+                    <a href="#">The Banks of the Oise</a>
                 </h2>
                 <div class="preview-subtitle">
-                    <p>This is the subtitle text for this post....</p>
+                    <p><em>THe Banks of the Oise</em> is an oil on canvas painting by Alfred Sisley.</p>
                 </div>
                 <div class="preview-meta">
                     <p><a href="#">Water</a></p>
@@ -63,13 +83,15 @@
 
             <div class="post-preview">
                 <div class="preview-img">
-                    <img src="static/images/forest_interior_with_a_painter,_civita_castellana_1994.52.3.jpg" alt="André Giroux, Forest Interior with a Painter, Civita Castellana, 1825/1830 ">
+                    <a href="#">
+                        <img src="static/images/forest_interior_with_a_painter,_civita_castellana_1994.52.3.jpg" alt="André Giroux, Forest Interior with a Painter, Civita Castellana, 1825/1830 ">
+                    </a>
                 </div>
                 <h2>
-                    <a href="post03.html">Forest Interior with a Painter, Civita Castellana</a>
+                    <a href="#">Forest Interior with a Painter, Civita Castellana</a>
                 </h2>
                 <div class="preview-subtitle">
-                    <p>This is the subtitle text for this post....</p>
+                    <p><em>Forest Interior with a Painter, Civita Castellana</em> is an oil on paper painting by André Giroux.</p>
                 </div>
                 <div class="preview-meta">
                     <p><a href="#">Forest</a></p>
@@ -101,6 +123,7 @@
                     <li><a href="#">Water</a></li>
                     <li><a href="#">Forest</a></li>
                     <li><a href="#">Portraits</a></li>
+                    <li><a href="#">Sky</a></li>
                 </ul>
             </div>
         </div>
@@ -113,7 +136,9 @@
 
             <div class="footer-about">
                 <h2>Art in the public domain</h2>
+                <p>Link to the <a href="design_system.html"> design system </a> documentation.</p>
                 <p>This site contains paintings which are in the public domain. All images sourced from the <a href="https://www.nga.gov/collection/paintings.html">National Gallery of Art</a>.</p>
+                <p>Social media icons from <a href="https://commons.wikimedia.org">Wikimedia Commons</a>.</p>
             </div>
         </footer>
     </div>

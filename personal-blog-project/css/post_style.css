@@ -1,6 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"); 
 
-.post{
+.post {
     grid-area: content;
     margin: auto;
 }
@@ -8,7 +8,7 @@
 
 /* heading */
 
-.post-header{
+.post-header {
     display: flex;
     flex-direction: column-reverse;
     margin: auto;
@@ -18,38 +18,37 @@
 }
 
 
-.post-header-img{
+.post-header-img {
     flex-basis: 50%;
     padding: 0;
     margin: 0;
 }
 
 
-.post-header-img img{
+.post-header-img img {
     max-width: 100%;
 }
 
 
-.post-header-img > figcaption{
+.post-header-img {
+    font: italic 0.8rem var(--font-subtitle);
     color: var(--colour-pale);
-    font-size: 0.8rem;
-    font-style: italic;
 }
 
 
-.post-header-meta{
+.post-header-meta {
     flex-basis: 50%;
 }
 
 
-.post-header-meta > p{
+.post-header-meta > p {
     font-size: 0.9rem;
 }
 
 
 /* body */
 
-.article-body{
+.article-body {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(1fr, 3);
@@ -61,19 +60,21 @@
 }
 
 
-.article-body > p{
+.article-body > p {
     max-width: 700px;
     margin: auto;
     grid-column: 1/4;
 }
 
 
-.article-body img{
+.article-body img {
     max-width: 100%;
 }
 
 
-.article-img{
+.article-img {
+    font: italic 0.9em var(--font-subtitle);
+    text-align: center;
     grid-column: 1/4;
     max-width: 100%;
     margin: 0;
@@ -82,94 +83,89 @@
     border-radius: 10px;
     text-decoration: underline;
     text-decoration-color: var(--colour02);
-}
-
-
-.article-img figcaption{
-    text-align: center;
-    font-family: var(--font-subtitle);
-    font-style: italic;
     color: var(--colour-pale);
     padding-top: 1em;
 }
 
 
-.article-body .quote{
+.article-body .quote {
     grid-column: 1 / 4;
 }
 
-/* author bio */
+/* author bio & socials */
 
-.author-bio, .article-socials{
+.article-socials {
     max-width: 700px;
     margin: auto;
-}
-
-
-.author-bio{
+    background: var(--bg-colour03);
     display: flex;
     flex-direction: row;
-    background: var(--bg-colour03);
+    font-size: var(--font-small);
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.3em;
+    border-radius: 10px;
 }
 
 
-.author-icon{
+.author-icon {
     max-width: 100px;
     height: auto;
     clip-path: circle(30%);
 }
 
-
-/* socials */
-
-.article-socials ul{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1em;
+.article-socials ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-right: 1em;
 }
 
 
-.socials-twitter::before{
-    content: " ";
-    background: url("../static/icons/icons8-twitter.svg") no-repeat;
-    background-size: 25px 25px;
-    display: inline-block;
-    vertical-align: text-bottom;
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
+.socials-button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: solid 1px var(--colour-highlight);
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-.socials-facebook::before{
-    content: " ";
-    background: url("../static/icons/icons8-facebook.svg") no-repeat;
-    background-size: 25px 25px;
-    display: inline-block;
-    vertical-align: text-bottom;
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
+.socials-svg {
+    width: 16px;
+    height: 16px;
 }
 
 
-.socials-linkedin::before{
-    content: " ";
-    background: url("../static/icons/icons8-linkedin.svg") no-repeat;
-    background-size: 25px 25px;
-    display: inline-block;
-    vertical-align: text-bottom;
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
+.socials-button:hover {
+    background: var(--colour02);
 }
+
+
+/* post specific sidebar styles */
+.post + .sidebar {
+    align-self: center;
+}
+
+
 
 /* layout media queries */
 
-@media(min-width:700px){
+@media(max-width: 600px) {
+    .article-socials ul {
+        flex-direction: column;
+    }
+}
+
+
+@media(min-width:1000px) {
     .post-header{
         display: flex;
         flex-direction: row;
@@ -180,31 +176,19 @@
     }
     
 
-    .post-header-meta > h2{
+    .post-header-meta > h2 {
         background: var(--colour-highlight);
-        margin-left: -60px;
         text-align: right;
     }
 
-
-    .article-socials ul{
-        flex-direction: row;
-        justify-content: center;
-    }
-
-
-    .article-socials li:nth-child(n+2){
-        padding-left: 1em;
-    }
-
         
-    .article-body .quote{
+    .article-body .quote {
         grid-column: 1;
         margin-left: -50px;
     }
 
 
-    .quote + p{
+    .quote + p {
         grid-column: 2 / 4;
     }
 }

@@ -7,8 +7,79 @@
     padding: 2em;
     flex-wrap: wrap;
     max-width: 900px;
-    justify-self: end;
+    justify-self: center;
 }
+
+
+/* feature article */
+
+.feed-extra {
+    grid-area: extra;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em;
+    max-width: 800px;
+    border: 5px solid var(--colour-highlight);
+    border-radius: 2em;
+    justify-self: center;
+    background-image: linear-gradient(to right, 
+    rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    url("../static/images/the_bridge_at_argenteuil_1983.1.24.jpg");
+    background-size: 100%;
+}
+
+
+.extra-h2 {
+    text-align: right;
+}
+
+
+.extra-h2 a {
+    border: 0;
+    color: black;
+    background: linear-gradient(to right, white, white) no-repeat 0 23px/100% 100%;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.extra-p {
+    background: white;
+    padding: 0.4em;
+}
+
+
+.feed-extra > .extra-meta,
+.extra-meta > p  {
+    margin: 0;
+}
+
+
+.extra-h2 a,
+.extra-img a {
+    border: 0;
+}
+
+
+.extra-h2 a:hover {
+    color: var(--colour-highlight);
+}
+
+
+.extra-img {
+    max-height: 300px;
+    max-width: 100%;
+    overflow: hidden;
+    display:none;
+}
+
+
+.extra-img img{
+    max-width: 100%;
+}
+
+
+/* post preview boxes */
 
 
 .post-preview {
@@ -35,42 +106,38 @@
 
 
 .preview-meta {
+    font: 300 0.8em var(--font-other);
     display: inline-flex;
     min-width: 100%;
     justify-content: space-between;
     margin-top: auto;
-    font-family: var(--font-other);
-    font-weight: 300;
-    font-size: 0.8em;
     color: var(--colour-pale);
 }
 
 
-.preview-meta > p{
+.preview-meta > p {
     margin-bottom: 0;
     margin-top: 2em;
 }
 
 
-.preview-meta a{
+.preview-meta a {
     color: var(--colour-pale);
 }
 
 
 .post-preview > h2 {
-    font-family: var(--font-heading);
-    font-size: 2.5rem;
+    font: italic 100 var(--font-large) var(--font-heading);
     text-align: right;
-    font-weight: 100;
-    font-style: italic;
     margin: 0;
 }
 
 
 .post-preview > h2 a {
     border: 0;
-    color: white;
-    background: var(--colour-highlight);
+    color: black;
+    background: linear-gradient(to right, var(--colour02), var(--colour02)) no-repeat 0 23px/100% 100%;
+    font-weight: 200;
 }
 
 
@@ -85,7 +152,7 @@
 }
 
 
-.preview-subtitle > p{
+.preview-subtitle > p {
     margin-bottom: 0;
 }
 
@@ -94,5 +161,12 @@
 @media(min-width:450px) {
     .post-preview{
         min-width: 250px;
+    }
+}
+
+
+@media(min-width: 1100px) {
+    .feed {
+        justify-self: end;
     }
 }
