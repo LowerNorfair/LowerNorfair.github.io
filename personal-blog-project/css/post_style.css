@@ -15,6 +15,7 @@
     gap: 2em;
     padding: 1em;
     background-color: var(--bg-colour03);
+    max-width: 100%;
 }
 
 
@@ -166,13 +167,12 @@
 
 
 @media(min-width:1000px) {
-    .post-header{
+    .post-header {
         display: flex;
         flex-direction: row;
         margin: auto;
         gap: 2em;
         padding: 1em;
-        max-width: 80%;
     }
     
 
@@ -190,5 +190,12 @@
 
     .quote + p {
         grid-column: 2 / 4;
+    }
+}
+
+
+@media(min-width: 1001px) and (max-width: 1349px) {
+    .post-header {
+        max-width: 80%;
     }
 }

@@ -295,7 +295,7 @@
 }
 
 
-@media(min-width:1100px) {
+@media(min-width:1350px) {
         /* body */
     .container {
         grid-template-areas:
