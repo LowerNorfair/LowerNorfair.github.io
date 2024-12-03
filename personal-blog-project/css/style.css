@@ -78,15 +78,14 @@ h1 {
 
 
 h2 {
-    font-family: var(--font-heading);
-    font-weight: 400;
+    font: 400 var(--font-large) var(--font-heading);
     letter-spacing: 0.08rem;
     font-style: italic;
 }
 
 
 h3 {
-    font: bold 1em var(--font-heading);
+    font: bold 1.4em var(--font-heading);
     margin: 0;
 }
 

@@ -21,4 +21,6 @@
     --colour05: rgb(71, 52, 165);
     --colour-highlight: rgb(183, 96, 255);
     --colour-pale: rgb(116, 116, 116);
+
+    --padding-large: 2em;
 }

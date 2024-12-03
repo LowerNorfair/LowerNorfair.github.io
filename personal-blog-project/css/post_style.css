@@ -1,8 +1,9 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"); 
+/* post styles */
 
 .post {
     grid-area: content;
-    margin: auto;
+    margin-top: -2em;
+    border-top: 1px solid var(--colour02);
 }
 
 
@@ -42,7 +43,7 @@
 }
 
 
-.post-header-meta > p {
+.post-header-meta p + p {
     font-size: 0.9rem;
 }
 
@@ -65,11 +66,19 @@
 }
 
 
-.article-body > p {
+.article-body > p,
+.article-body > h3 {
     max-width: 700px;
-    margin: auto;
     grid-column: 1/4;
+    margin: auto;
+    width: 100%;
 }
+
+
+.article-body > p + h3 {
+    margin-top: 1em;
+}
+
 
 
 .article-body img,
@@ -85,7 +94,7 @@
     max-width: 100%;
     margin: 0;
     padding: 1em;
-    background: var(--bg-colour03);
+    background: var(--bg-colour01);
     border-radius: 10px;
     text-decoration: underline;
     text-decoration-color: var(--colour02);
@@ -116,10 +125,12 @@
 
 
 .author-icon {
-    max-width: 100px;
+    padding: 1em;
+    max-width: 70px;
     height: auto;
     clip-path: circle(30%);
 }
+
 
 .article-socials ul {
     list-style: none;
@@ -172,6 +183,12 @@
 
 
 @media(min-width:1000px) {
+    .post {
+        margin-top: 0;
+        border: 0;
+    }
+
+
     .post-header {
         display: flex;
         flex-direction: row;
