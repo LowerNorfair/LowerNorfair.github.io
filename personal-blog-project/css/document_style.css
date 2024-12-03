@@ -18,24 +18,12 @@
 .doco-body {   
     max-width: 700px;
     margin: auto;
+    padding: 1em;
 }
 
 
-.doco-h2 {
-    font-family: var(--font-heading);
-    font-size: var(--font-large);
-    text-align: right;
-    font-weight: 100;
-    font-style: italic;
-    margin: 0;
-    border: 0;
-    color: black;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to right, 
-        var(--colour02), var(--colour02));
-    background-position: 0 23px;
-    background-size: 100% 100%;
-    font-weight: 200;
+.post-preview {
+    margin-bottom: 2em;
 }
 
 
