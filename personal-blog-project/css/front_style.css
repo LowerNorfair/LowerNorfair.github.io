@@ -6,12 +6,20 @@
 }
 
 
-.feed {
+.front-body {
     grid-area: content;
+    display: grid;
+    justify-self: center;
+    max-width: 1200px;
+}
+
+
+.feed {
     display: flex;
+    flex-wrap: wrap;
     gap: 2em;
     padding: 2em;
-    flex-wrap: wrap;
+    grid-area: feed;
 }
 
 
@@ -177,11 +185,7 @@
 
 
 @media(min-width:1350px) {
-    .front-container {
-        grid-template-areas:
-            "header header header header header"
-            ". extra extra extra ."
-            ". content content sidebar ."
-            "footer footer footer footer footer";
+    .front-body{
+        grid-template-areas: "feed sidebar";
     }
 }
