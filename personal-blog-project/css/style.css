@@ -104,7 +104,9 @@ input[type=text] {
 }
 
 
-input[type=text], input[type=submit] {
+input[type=text], 
+input[type=submit], 
+.form-button {
     width: 100%;
     padding: 1em;
     border: 1px solid #ccc;
@@ -113,13 +115,15 @@ input[type=text], input[type=submit] {
 }
 
 
-input[type=submit] {
+input[type=submit],
+.form-button {
     background-color: var(--colour02);
     font-family: var(--font-other);
 }
 
 
-input[type=submit]:hover {
+input[type=submit]:hover,
+.form-button:hover {
     background-color: var(--colour-highlight);
 }
 
