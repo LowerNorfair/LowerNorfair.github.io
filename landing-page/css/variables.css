@@ -1,0 +1,11 @@
+:root 
+{
+    --colour01: #D05353;
+    --colour02: #FFD166;
+    --colour-white: #FCFCFC;
+    --colour-bg: #000;
+
+    --font-nav: "Hepta Slab", serif;
+    --font-para: "Courier New", Courier, Monospace;
+    --font-heading: "IBM Plex Mono", serif;
+}
