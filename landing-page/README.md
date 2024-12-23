@@ -9,7 +9,7 @@ Use the navigation to skip to different chapters of the book.
 On smaller screens, the navigation can be open and closed by clicking the TOC button at the top right-hand corner of the screen.
 
 ## Demo
-[Index page](github.com/lowernorfair/landing-page/index.html)
+[Index page](https://lowernorfair.github.io/landing-page/)
 
 ## Features
 - The script collects any h2 or h3 headings and creates the table of contents (TOC) based on their text
@@ -19,6 +19,4 @@ On smaller screens, the navigation can be open and closed by clicking the TOC bu
 - TOC shrinks on smaller screens
 
 ## Contact
-@Github [LowerNorfair](github.com/lowernorfair)
-
-[(Back to top)](#table-of-contents)
+@Github [LowerNorfair](https://github.com/lowernorfair)

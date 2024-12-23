@@ -1,4 +1,4 @@
-/*
+/**
 * global variables
 */
 const TOC_ACTIVE_CLASS = "nav-active-item";
@@ -9,7 +9,7 @@ const ACTIVE_SECTION = "content-section-active";
 let visibleSections = [];   
 let prevActiveSection; 
 
-/* 
+/** 
 * addNav sets up the nav list by finding any h2 and h3 elements
 * then gives those headers an anchor named after the title's text
 * and adds a list element linking to the header's anchor
@@ -49,7 +49,7 @@ function addNav(){
     navList.appendChild(fragment);
 }
 
-/*
+/**
 * function for checking if there are duplicate headings
 * if there are 2 or more identical headings, new list elements are numbered
 */
@@ -74,7 +74,7 @@ function checkForDuplicate(title, headings){
     return id;
 }
 
-/*
+/**
 * addNavElement creates and adds a new list element to the nav
 */
 function addNavElement(item, parent, headings){
@@ -92,7 +92,7 @@ function addNavElement(item, parent, headings){
     parent.appendChild(ele);
 }
 
-/*
+/**
 * toggle the active nav item
 */
 function changeActiveNav(id){
@@ -102,7 +102,7 @@ function changeActiveNav(id){
     document.getElementById(id).classList.toggle(TOC_ACTIVE_CLASS);
 }
 
-/*
+/**
 * create section observer to keep track of what section is at the top of the screen
 */
 function createObserver(){
@@ -119,7 +119,7 @@ function createObserver(){
     sections.forEach((section) => observer.observe(section));
 }
 
-/*
+/**
 * handleIntersect keeps track of visible sections and the active section
 * visible sections are tracked and sorted based on their bounding client
 * rect so that the top section is made active
@@ -160,7 +160,7 @@ function handleIntersect(entries, observer){
     prevActiveSection = visibleSections[0];
 }
 
-/*
+/**
 * adds smooth scroll to the nav links
 * scrollIntoView for any valid ids
 * scrollTo to scroll to the top of the page otherwise
@@ -188,7 +188,7 @@ function sectionSmoothScroll(){
 
 }
 
-/*
+/**
 * navExpand sets up a click listener to expand the TOC on smaller screens
 */
 function navExpand(){
@@ -200,7 +200,7 @@ function navExpand(){
     });
 }
 
-/*
+/**
 * initalise the page
 */
 function Initalise(){
